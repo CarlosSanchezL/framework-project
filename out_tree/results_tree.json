@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-09-14T22:33:22.179870",
+  "model": "DecisionTreeRegressor",
+  "best_max_depth": 2,
+  "splits": {
+    "train": 265,
+    "val": 88,
+    "test": 89
+  },
+  "shallow_val": {
+    "rmse_train": 54.56797368455454,
+    "mae_train": 43.575778491261815,
+    "r2_train": 0.5196774797492747,
+    "rmse_eval": 57.20332882898659,
+    "mae_eval": 46.5351312296221,
+    "r2_eval": 0.38800070394957753
+  },
+  "deep_val": {
+    "rmse_train": 0.0,
+    "mae_train": 0.0,
+    "r2_train": 1.0,
+    "rmse_eval": 78.75147906258938,
+    "mae_eval": 64.38636363636364,
+    "r2_eval": -0.15991390882214307
+  },
+  "best_test": {
+    "rmse_train": 57.15789676024654,
+    "mae_train": 45.961536296801206,
+    "r2_train": 0.4569499524162941,
+    "rmse_eval": 60.67507443623852,
+    "mae_eval": 50.8218452441161,
+    "r2_eval": 0.33976987929304536
+  },
+  "shallow_test": {
+    "rmse_train": 53.86899980870235,
+    "mae_train": 43.52899630450176,
+    "r2_train": 0.5176467591760983,
+    "rmse_eval": 59.04258286486283,
+    "mae_eval": 48.20239267525322,
+    "r2_eval": 0.37481954300604536
+  },
+  "diagnosis_shallow": {
+    "bias": "medio",
+    "varianza": "medio",
+    "ajuste": "fit"
+  },
+  "diagnosis_deep": {
+    "bias": "bajo",
+    "varianza": "alto",
+    "ajuste": "overfit"
+  },
+  "learning_curve_png": "out_tree/learning_curve_tree.png",
+  "depth_trend_png": "out_tree/depth_trend_tree.png"
+}

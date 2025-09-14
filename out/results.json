@@ -1,0 +1,70 @@
+{
+  "timestamp": "2025-09-14T16:49:02.322214",
+  "dataset": "sklearn.datasets.load_diabetes",
+  "feature_names": [
+    "age",
+    "sex",
+    "bmi",
+    "bp",
+    "s1",
+    "s2",
+    "s3",
+    "s4",
+    "s5",
+    "s6"
+  ],
+  "splits": {
+    "train": 265,
+    "val": 88,
+    "test": 89
+  },
+  "baseline_linear": {
+    "val": {
+      "rmse_train": 53.70746330163821,
+      "mae_train": 43.4439638010543,
+      "r2_train": 0.5347069389978127,
+      "rmse_eval": 52.05059094031073,
+      "mae_eval": 42.160818667533924,
+      "r2_eval": 0.493289799817624
+    },
+    "test": {
+      "rmse_train": 53.1572150740196,
+      "mae_train": 43.0290449807244,
+      "r2_train": 0.5303094561107167,
+      "rmse_eval": 55.753642394832646,
+      "mae_eval": 45.77400952426303,
+      "r2_eval": 0.4425304012573502
+    },
+    "diagnosis": {
+      "bias": "medio",
+      "varianza": "medio",
+      "ajuste": "fit"
+    }
+  },
+  "ridge": {
+    "alpha": 0.1623776739188721,
+    "val": {
+      "rmse_train": 53.710010120032095,
+      "mae_train": 43.449645002490335,
+      "r2_train": 0.5346628093759564,
+      "rmse_eval": 51.993632488187586,
+      "mae_eval": 42.0670272021141,
+      "r2_eval": 0.49439816907018597
+    },
+    "test": {
+      "rmse_train": 53.158340057396366,
+      "mae_train": 43.0279440790733,
+      "r2_train": 0.5302895754738302,
+      "rmse_eval": 55.68713318226593,
+      "mae_eval": 45.69280324076203,
+      "r2_eval": 0.4438596327738854
+    },
+    "diagnosis": {
+      "bias": "medio",
+      "varianza": "medio",
+      "ajuste": "fit"
+    }
+  },
+  "learning_curve_png": "out/learning_curve_linear.png",
+  "validation_curve_png": "out/validation_curve_ridge.png"
+}
