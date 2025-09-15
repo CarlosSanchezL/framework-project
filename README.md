@@ -52,32 +52,32 @@ ml-framework-project/
 
 En macOS / Linux:
 bash
-  python3 -m venv .venv
-  source .venv/bin/activate
+  -python3 -m venv .venv
+  -source .venv/bin/activate
 
 En Windows (PowerShell):
-  python -m venv .venv
-  .venv\Scripts\activate
+  -python -m venv .venv
+  -.venv\Scripts\activate
 
 2. Instalar dependencias
-  pip install --upgrade pip setuptools wheel
-  pip install -r requirements.txt
+  -pip install --upgrade pip setuptools wheel
+  -pip install -r requirements.txt
 
 ▶️ Ejecución
 Generar modelos, gráficas y reportes
-  python main.py --plot
+  -python main.py --plot
 
 
 Esto entrenará los modelos Lineal y Ridge, y guardará las figuras y reportes en la carpeta out/.
 
 Hacer predicciones con el conjunto de prueba
-  python main.py --predict 5
+  -python main.py --predict 5
 
 
 Esto imprimirá 5 predicciones de ejemplo comparando valor real (y_true) vs valor predicho (y_pred).
 
 Árbol de Decisión (opcional)
-  python main_tree.py --plot
+  -python main_tree.py --plot
 
 
 Esto entrenará y evaluará un árbol de decisión, generando resultados en out_tree/.
