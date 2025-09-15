@@ -23,29 +23,49 @@ El proyecto genera **curvas de aprendizaje**, **curvas de validación**, **repor
 
 ---
 
-## 📁 Estructura del proyecto
-## 📁 Estructura del proyecto
+## ## 📁 Estructura del proyecto
 
-```text
+```
 ml-framework-project/
-├── main.py  # Script principal: LinearRegression + Ridge
-├── main_tree.py  # Script adicional: Árbol de Decisión (opcional)
-├── requirements.txt  # Dependencias del proyecto
-├── README.md  # Documentación
+├── main.py
+├── main_tree.py
+├── requirements.txt
+├── README.md
 │
-├── out/  # Resultados Lineal + Ridge
+├── out/
 │   ├── learning_curve_linear.png
 │   ├── validation_curve_ridge.png
 │   ├── report.md
 │   └── results.json
 │
-└── out_tree/  # Resultados Árbol de Decisión (opcional)
+└── out_tree/
     ├── learning_curve_tree.png
     ├── depth_trend_tree.png
     ├── report_tree.md
-    └── results_tree.json`
+    └── results_tree.json
+```
 
+---
 
+## 🔧 Instalación y configuración
+
+### 1. Crear entorno virtual (recomendado)
+
+En macOS / Linux:
+```
+python3 -m venv .venv
+```
+```
+source .venv/bin/activate
+```
+
+En Windows:
+```
+python -m venv .venv
+```
+```
+.venv\Scripts\activate
+```
 
 ---
 
@@ -55,32 +75,50 @@ ml-framework-project/
 
 En macOS / Linux:
 bash
-`python3 -m venv .venv
+```
+python3 -m venv .venv
+```
+```
 source .venv/bin/activate`
+```
 
 En Windows (PowerShell):
-`python -m venv .venv
-.venv\Scripts\activate`
+```
+python -m venv .venv
+```
+```
+.venv\Scripts\activate
+```
 
 ### 2. Instalar dependencias
-`pip install --upgrade pip setuptools wheel
-pip install -r requirements.txt`
+```
+pip install --upgrade pip setuptools wheel
+```
+```
+pip install -r requirements.txt
+```
 
 ### ▶️ Ejecución
 Generar modelos, gráficas y reportes
-`python main.py --plot`
+```
+python main.py --plot
+```
 
 
 Esto entrenará los modelos Lineal y Ridge, y guardará las figuras y reportes en la carpeta out/.
 
 Hacer predicciones con el conjunto de prueba
-`python main.py --predict 5`
+```
+python main.py --predict 5
+```
 
 
 Esto imprimirá 5 predicciones de ejemplo comparando valor real (y_true) vs valor predicho (y_pred).
 
 Árbol de Decisión (opcional)
-`python main_tree.py --plot`
+```
+python main_tree.py --plot
+```
 
 
 Esto entrenará y evaluará un árbol de decisión, generando resultados en out_tree/.
@@ -95,19 +133,20 @@ Reportes automáticos (.md y .json) → resumen con métricas clave.
 
 Métricas:
 
-RMSE (Root Mean Squared Error)
+-RMSE (Root Mean Squared Error)
 
-MAE (Mean Absolute Error)
+-MAE (Mean Absolute Error)
 
-R² (Coeficiente de determinación)
+-R² (Coeficiente de determinación)
 
-Diagnóstico de sesgo, varianza y ajuste
+-Diagnóstico de sesgo, varianza y ajuste
 
 Ejemplo de salida al predecir:
-
+```
 Sample 0: y_true=97.000 | y_pred=151.386
 Sample 1: y_true=96.000 | y_pred=59.120
 Sample 2: y_true=273.000 | y_pred=247.484
+```
 
 ### 📌 Notas
 
