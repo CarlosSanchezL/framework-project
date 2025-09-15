@@ -24,7 +24,7 @@ El proyecto genera **curvas de aprendizaje**, **curvas de validación**, **repor
 ---
 
 ## 📁 Estructura del proyecto
-
+`
 ml-framework-project/
 ├── main.py  # Script principal: LinearRegression + Ridge
 ├── main_tree.py  # Script adicional: Árbol de Decisión (opcional)
@@ -41,7 +41,7 @@ ml-framework-project/
     ├── learning_curve_tree.png
     ├── depth_trend_tree.png
     ├── report_tree.md
-    └── results_tree.json
+    └── results_tree.json`
 
 
 ---
