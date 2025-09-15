@@ -47,28 +47,6 @@ ml-framework-project/
 
 ---
 
-## 🔧 Instalación y configuración
-
-### 1. Crear entorno virtual (recomendado)
-
-En macOS / Linux:
-```
-python3 -m venv .venv
-```
-```
-source .venv/bin/activate
-```
-
-En Windows:
-```
-python -m venv .venv
-```
-```
-.venv\Scripts\activate
-```
-
----
-
 ## ⚙️ Instalación y configuración
 
 ### 1. Crear entorno virtual (recomendado)
