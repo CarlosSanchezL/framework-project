@@ -52,37 +52,37 @@ ml-framework-project/
 
 En macOS / Linux:
 bash
-  -python3 -m venv .venv
-  -source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate```
 
 En Windows (PowerShell):
-  -python -m venv .venv
-  -.venv\Scripts\activate
+python -m venv .venv
+.venv\Scripts\activate
 
-2. Instalar dependencias
-  -pip install --upgrade pip setuptools wheel
-  -pip install -r requirements.txt
+### 2. Instalar dependencias
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
 
-▶️ Ejecución
+### ▶️ Ejecución
 Generar modelos, gráficas y reportes
-  -python main.py --plot
+python main.py --plot
 
 
 Esto entrenará los modelos Lineal y Ridge, y guardará las figuras y reportes en la carpeta out/.
 
 Hacer predicciones con el conjunto de prueba
-  -python main.py --predict 5
+python main.py --predict 5
 
 
 Esto imprimirá 5 predicciones de ejemplo comparando valor real (y_true) vs valor predicho (y_pred).
 
 Árbol de Decisión (opcional)
-  -python main_tree.py --plot
+python main_tree.py --plot
 
 
 Esto entrenará y evaluará un árbol de decisión, generando resultados en out_tree/.
 
-📈 Resultados esperados
+### 📈 Resultados esperados
 
 Curvas de aprendizaje → muestran el desempeño del modelo en función del tamaño de entrenamiento.
 
@@ -106,7 +106,7 @@ Sample 0: y_true=97.000 | y_pred=151.386
 Sample 1: y_true=96.000 | y_pred=59.120
 Sample 2: y_true=273.000 | y_pred=247.484
 
-📌 Notas
+### 📌 Notas
 
 El proyecto está diseñado para ser reproducible y correr únicamente con Python estándar (sin notebooks).
 
@@ -114,7 +114,7 @@ Los resultados pueden variar levemente debido a la aleatoriedad del train_test_s
 
 Compatible con macOS (M1/M2/M3), Linux y Windows.
 
-👨‍💻 Autor
+### 👨‍💻 Autor
 
 Carlos Sánchez Llanes
 Proyecto académico de aprendizaje automático – 2025
