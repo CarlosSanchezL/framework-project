@@ -1,3 +1,25 @@
+Implementación SIN framework (desde cero)
+
+Además de los modelos con scikit-learn, este proyecto incluye un archivo `main_scratch.py` 
+que implementa **Regresión Lineal desde cero usando únicamente NumPy**, sin usar 
+ningún framework de machine learning.
+
+Esto permite cumplir con la parte de la evaluación que solicita una implementación sin frameworks.
+
+▶️ Ejecución:
+
+# Usando todas las columnas menos la target
+python main_scratch.py --data data.csv --target <columna_target> --standardize
+
+# Especificando features y usando regularización L2
+python main_scratch.py --data data.csv --target <columna_target> --features col1,col2 --standardize --l2 1.0
+
+📂 Resultados:
+- `out/report_scratch.md` → Reporte con métricas y diagnóstico (bias, varianza, ajuste).
+- `out/results_scratch.json` → Resultados en formato JSON.
+- `out/pred_vs_true_scratch.png` → Gráfica predicción vs valor real.
+- `out/residuals_scratch.png` → Histograma de residuales.
+
 # 📊 Machine Learning Framework Project
 
 Este proyecto implementa un flujo completo de **aprendizaje automático** usando `scikit-learn`.  
