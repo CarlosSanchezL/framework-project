@@ -50,6 +50,7 @@ El proyecto genera **curvas de aprendizaje**, **curvas de validación**, **repor
 ```
 ml-framework-project/
 ├── main.py
+├── main_scratch.py
 ├── main_tree.py
 ├── requirements.txt
 ├── README.md
@@ -58,7 +59,7 @@ ml-framework-project/
 │   ├── learning_curve_linear.png
 │   ├── validation_curve_ridge.png
 │   ├── report.md
-│   └── results.json
+│   └── results.json   
 │
 └── out_tree/
     ├── learning_curve_tree.png
