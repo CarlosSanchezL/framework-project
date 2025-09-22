@@ -9,7 +9,7 @@ Esto permite cumplir con la parte de la evaluación que solicita una implementac
 ▶️ Ejecución:
 
 # Usando todas las columnas menos la target
-python main_scratch.py --data data.csv --target <columna_target> --standardize
+python main_scratch.py --data data.csv --target target --standardize --l2 1.0
 
 # Especificando features y usando regularización L2
 python main_scratch.py --data data.csv --target <columna_target> --features col1,col2 --standardize --l2 1.0
